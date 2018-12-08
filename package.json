@@ -2,18 +2,13 @@
   "name": "wolf-react",
   "version": "0.0.1",
   "main": "index.js",
-  "author": "deng565430",
+  "author": "deng00000",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "npm run bootstrap",
     "bootstrap": "lerna bootstrap",
     "build:builder": "cd ./packages/wolf-builder && npm run build",
-    "build:cli": "cd ./packages/wolf-cli && npm run build",
-    "build:cli-nodejs": "cd ./packages/wolf-cli-nodejs && npm run build",
-    "build:cli-web": "cd ./packages/wolf-cli-web && npm run build",
-    "build:utils": "cd ./packages/wolf-utils && npm run build",
-    "build:init": "cd ./packages/wolf-init && npm run build",
-    "build": "npm run build:builder && npm run build:cli && npm run build:cli-nodejs && npm run build:cli-web && npm run build:utils && npm run build:init"
+    "build": "npm run build:builder"
   },
   "license": "MIT",
   "devDependencies": {
